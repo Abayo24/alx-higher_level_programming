@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-__import__("helper_101")
+open(1, 'w').write("#pythoniscool\n")
