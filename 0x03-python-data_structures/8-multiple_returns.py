@@ -2,7 +2,9 @@
 def multiple_returns(sentence):
     length = len(sentence)
     first = sentence[0]
+    tup1 = length, first
+    tup2 = length, None
     if len(sentence) != 0:
-        return length, first
+        return tup1
     else:
-        return length, None
+        return tup2
