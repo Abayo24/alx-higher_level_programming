@@ -12,4 +12,3 @@ def safe_function(fct, *args):
     except IndexError as err:
         print("Exception {}".format(err), file = sys.stderr)
         return None
-
