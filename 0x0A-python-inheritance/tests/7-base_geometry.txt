@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+from base_geometry import BaseGeometry  # Make sure to adjust the import based on your actual module name
+
+# Test Case 1: Creating an instance of BaseGeometry
+geometry_instance = BaseGeometry()
+
+# Test Case 2: Calling the area method (which raises an exception)
+try:
+    area_result = geometry_instance.area()
+    print("Area result:", area_result)  # This line should not be reached
+except Exception as e:
+    print(f"Exception raised: {e}")
+
+# Test Case 3: Validating integers using integer_validator
+try:
+    geometry_instance.integer_validator("test_int", 42)
+    print("Integer validation successful!")
+except Exception as e:
+    print(f"Exception raised: {e}")
+
+# Test Case 4: Validating non-integer (should raise TypeError)
+try:
+    geometry_instance.integer_validator("test_non_int", "not_an_integer")
+    print("This line should not be reached")
+except TypeError as e:
+    print(f"TypeError raised: {e}")
+
+# Test Case 5: Validating non-positive integer (should raise ValueError)
+try:
+    geometry_instance.integer_validator("test_non_positive", 0)
+    print("This line should not be reached")
+except ValueError as e:
+    print(f"ValueError raised: {e}")
+
