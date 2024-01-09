@@ -10,4 +10,3 @@ class MyInt(int):
     def __ne__(self, value):
         """overrides ne"""
         return super().__eq__(value)
-
