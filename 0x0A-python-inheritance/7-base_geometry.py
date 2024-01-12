@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 """BaseGeometry with Public instance method"""
 
 
@@ -15,4 +15,3 @@ class BaseGeometry:
         elif value <= 0:
 
             raise ValueError(f"{name} must be greater than 0")
-
