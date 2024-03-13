@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 
+<<<<<<< HEAD
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -15,6 +16,13 @@ typedef struct listint_s
 {
     int n;
     struct listint_s *next;
+=======
+
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+>>>>>>> master
 } listint_t;
 
 size_t print_listint(const listint_t *h);
