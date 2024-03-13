@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const cLang = 'C id fun';
+const cLang = 'C is fun';
 const pLang = 'Python is cool';
 const jLang = 'Javascript is amaizing';
 
