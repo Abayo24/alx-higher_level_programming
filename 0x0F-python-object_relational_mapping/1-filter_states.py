@@ -6,6 +6,7 @@ import sys
 import MySQLdb
 
 if __name__ == "__main__":
+    """main function that list states thst start with N"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
