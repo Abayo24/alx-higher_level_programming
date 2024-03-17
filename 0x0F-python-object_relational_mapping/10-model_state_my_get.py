@@ -23,12 +23,12 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State.id)\
+    state_id = session.query(State.id)\
                    .filter(State.name.collate('utf8mb4_bin') == state_name)\
                    .first()
 
-    if state:
-        print(state.id)
+    if state_id:
+        print(state_id.id)
     else:
         print("Not Found")
 
