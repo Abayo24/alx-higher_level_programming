@@ -28,8 +28,16 @@ if __name__ == '__main__':
                 ORDER BY cities.id ASC", (state_name,))
 
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+
+    if rows:
+        for index, row in enumerate(rows):
+            for city in row:
+                if index < len(rows) - 1:
+                    print(city, end=', ')
+                else:
+                    print(city)
+    else:
+        print()
 
     cur.close()
     db.close()
