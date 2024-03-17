@@ -5,12 +5,11 @@
 import sys
 import MySQLdb
 
-username = sys.argv[1]
-password = sys.argv[2]
-database = sys.argv[3]
-
 if __name__ == "__main__":
-    """main function lists all states starting with N"""
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
+
     db = MySQLdb.connect(host="localhost",
                          port=3306,
                          user=username,
