@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""script that takes in an argument and displays matching name alues"""
+"""script that takes in an argument and displays matching name values"""
+
 
 import sys
 import MySQLdb
 
 if __name__ == "__main__":
+    """main function that displays matching name values"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
